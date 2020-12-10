@@ -1,0 +1,110 @@
+<resources>
+    <string name="app_name">Photi</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="select_location">Select location</string>
+    <string name="use_my_location">Use my location</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="preference_category_localization">Localization</string>
+    <string name="preference_key_use_local_time" translatable="false">preference_key_use_local_time</string>
+    <string name="preference_title_use_local_time">Display local time</string>
+    <string name="navigation_menu_title_clock">Time</string>
+    <string name="navigation_menu_title_settings">Settings</string>
+    <string name="preference_summary_on_use_local_time">Display local time.</string>
+    <string name="preference_summary_off_use_local_time">Display phone time.</string>
+    <string name="blank_location_description">No location is recorded.</string>
+    <string name="add_current_location">Use my location</string>
+    <string name="manually_set_location">Add location by name</string>
+    <string name="request_location_permission">In order to get your current location, we need your GPS permission.</string>
+    <string name="request_location_permission_failed">Failed to get location permission from your device.</string>
+    <string name="request_location_null">Permission is granted but we got a null location information.</string>
+    <string name="beijing">Beijing</string>
+    <string name="shanghai">Shanghai</string>
+    <string name="guangzhou">Guangzhou</string>
+    <string name="wuhan">Wuhan</string>
+    <string name="chengdu">Chengdu</string>
+    <string name="xian">Xi\'an</string>
+    <string name="london">London</string>
+    <string name="berlin">Berlin</string>
+    <string name="paris">Paris</string>
+    <string name="manchester">Manchester</string>
+    <string name="nyc">New York City</string>
+    <string name="sydney">Sydney</string>
+    <string name="aachen">Aachen</string>
+    <string name="title_activity_new_postition">Add a new position</string>
+    <string name="date_just_now">Just now</string>
+    <string name="date_minutes_before">%1$d minutes before</string>
+    <string name="date_hours_before">%1$d hours before</string>
+    <string name="date_today_time">Today %1$s</string>
+    <string name="date_yesterday_time">Yesterday %1$s</string>
+    <string name="date_days_ago">%1$d days ago %2$s</string>
+    <string name="date_right_away">In near future</string>
+    <string name="date_in_minutes">In %1$d minutes</string>
+    <string name="date_in_hours">In %1$d hours</string>
+    <string name="date_tomorrow_time">Tomorrow %1$s</string>
+    <string name="date_in_days">In %1$d days %2$s</string>
+    <string name="time_hours">%1$d hours and %2$d minutes</string>
+    <string name="time_minutes">%1$d minutes</string>
+    <string name="polar_day">Polar day</string>
+    <string name="polar_night">Polar night</string>
+    <string name="manage_location">Manage location</string>
+    <string name="delete_location_successfully">Remove %1$s from your database successfully.</string>
+    <string name="delete_location_confirmation">Remove %1$s</string>
+    <string name="my_location">location@%1$s</string>
+    <string name="east_longitude">%1$.2f E</string>
+    <string name="west_longitude">%1$.2f W</string>
+    <string name="north_latitude">%1$.2f N</string>
+    <string name="south_latitude">%1$.2f S</string>
+    <string name="save_location_successful">Save %1$s to database successfully</string>
+    <string name="title_activity_select_position">Map</string>
+    <string name="view_on_map">Select on map</string>
+    <string name="title_activity_select_in_map">Map</string>
+    <string name="google_map_init_marker_wuhan">Wuhan City</string>
+    <string name="recv_no_observation_position">Get no data in map.</string>
+    <string name="title_activity_select_time_zone">SelectTimeZoneActivity</string>
+    <string name="continent_1">Asia</string>
+    <string name="continent_2">Europe</string>
+    <string name="continent_3">North America</string>
+    <string name="continent_4">South America</string>
+    <string name="continent_5">Africa</string>
+    <string name="continent_6">Oceania</string>
+    <string name="continent_7">All</string>
+    <string name="selecting_continent">Select a continent then a timezone</string>
+    <string name="polar_time">Polar Day or Night</string>
+    <string name="timezone_1">Asia</string>
+    <string name="timezone_2">Europe</string>
+    <string name="timezone_3">Africa</string>
+    <string name="timezone_4">America</string>
+    <string name="timezone_5">Indian Ocean</string>
+    <string name="timezone_6">Pacific</string>
+    <string name="timezone_8">US</string>
+    <string name="timezone_7">P.R.China</string>
+    <string name="timezone_9">Australia</string>
+    <string name="timezone_10">Cananda</string>
+    <string name="timezone_11">Brazil</string>
+    <string name="timezone_12">Atlantic</string>
+    <string name="timezone_13">Antarctica</string>
+    <string name="timezone_14">Arctic</string>
+    <string name="timezone_15">All</string>
+    <string name="blue_time">Blue Time</string>
+    <string name="golden_time">Gold Time</string>
+    <string name="time_interval">%1$s ~ %2$s</string>
+</resources>

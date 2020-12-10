@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.wear.widget.BoxInsetLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/location_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:drawableStart="@drawable/ic_outline_place_24"
+                        android:gravity="center_vertical"
+                        android:lines="1"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="@tools:sample/cities" />
+
+                    <TextView
+                        android:id="@+id/location_coordinate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lines="1"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textSize="8sp"
+                        android:textStyle="italic"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/location_name"
+                        tools:text="N 30, S 50" />
+
+                    <TextView
+                        android:id="@+id/location_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/location_coordinate"
+                        tools:text="11:34:55" />
+
+                    <TextView
+                        android:id="@+id/time_offset"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/location_time"
+                        app:layout_constraintTop_toTopOf="@+id/location_time"
+                        tools:text="+5h" />
+
+                    <TextView
+                        android:id="@+id/sunrise_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:drawableStart="@drawable/ic_sunrise_24"
+                        android:gravity="center_vertical"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/location_time"
+                        tools:text="@tools:sample/date/ddmmyy" />
+
+                    <TextView
+                        android:id="@+id/sunset_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:drawableEnd="@drawable/ic_sunset_24"
+                        android:gravity="center_vertical"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/location_time"
+                        tools:text="@tools:sample/date/ddmmyy" />
+
+                    <TextView
+                        android:id="@+id/daytime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/sunrise_time"
+                        tools:text="@tools:sample/us_zipcodes" />
+
+                    <include
+                        android:id="@+id/blue_time_view"
+                        layout="@layout/view_special_time_display"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/daytime" />
+
+                    <include
+                        android:id="@+id/golden_time_view"
+                        layout="@layout/view_special_time_display"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/blue_time_view" />
+
+                    <include
+                        android:id="@+id/moon_time_view"
+                        layout="@layout/view_moon_phase_display"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/golden_time_view" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:id="@+id/blank_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.wear.widget.BoxInsetLayout>
+
+</layout>

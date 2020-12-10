@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.wear.widget.BoxInsetLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_box="all"
+            app:layout_boxedEdges="all">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/manage_location_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="@string/manually_set_location"
+                    app:drawableStartCompat="@drawable/ic_outline_add_location_24" />
+
+                <Button
+                    android:id="@+id/use_my_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:drawableStart="@drawable/ic_baseline_near_me_24"
+                    android:text="@string/use_my_location"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/view_on_map"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/ic_twotone_empty_location_24"
+                    android:drawableTint="@color/colorPureBlack"
+                    android:text="@string/view_on_map" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:listitem="@layout/item_observation_position" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.wear.widget.BoxInsetLayout>
+</layout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_main"
+        android:icon="@drawable/ic_twotone_schedule_24"
+        android:title="@string/navigation_menu_title_clock" />
+    <item
+        android:id="@+id/menu_add_location"
+        android:icon="@drawable/ic_twotone_add_location_24"
+        android:title="@string/manually_set_location" />
+    <item
+        android:id="@+id/menu_manage_location"
+        android:icon="@drawable/ic_twotone_edit_location_24"
+        android:title="@string/manage_location" />
+    <item
+        android:id="@+id/menu_settings"
+        android:icon="@drawable/ic_twotone_settings_24"
+        android:title="@string/navigation_menu_title_settings" />
+
+</menu>
